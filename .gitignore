@@ -1,0 +1,22 @@
+# Compilación de cargo
+/target
+
+# venv del prototipo Python
+/.venv
+
+# Sonidos: no se versionan. La lluvia viaja solo dentro del zip de cada release (pesa
+# ~90 MB), y lo demás que haya en assets/ son pruebas locales.
+/assets/*
+!/assets/.gitkeep
+
+# Estado local de la app (mezcla, volumen, salida)
+/.pluvia_state
+
+# Paquetes armados con packaging/package.ps1: se suben como archivos del release
+/Pluvia app/
+
+# Prototipo del panel ya integrado en la app (queda solo como historia local)
+/prototype/menu/
+
+# Datos locales de Claude Code
+/.claude/

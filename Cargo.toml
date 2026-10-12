@@ -1,0 +1,34 @@
+[package]
+name = "pluvia"
+version = "1.0.0"
+edition = "2024"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[dependencies]
+image = { version = "0.25.10", default-features = false, features = ["png", "ico"] }
+rfd = "0.17.2"
+rodio = "0.22.2"
+# Solo lo necesario del panel: backend winit + renderer por software (sin OpenGL).
+# `unstable-winit-030` da acceso a la ventana nativa (sin botón en la barra de tareas,
+# cerrar al perder el foco, ubicarla junto al ícono).
+slint = { version = "1.18.1", default-features = false, features = [
+    "std",
+    "backend-winit",
+    "renderer-software",
+    "compat-1-2",
+    "unstable-winit-030",
+] }
+tray-icon = "0.24.2"
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_Graphics_Dwm", "Win32_UI_Shell", "Win32_UI_WindowsAndMessaging"] }
+winreg = "0.56.0"
+
+[build-dependencies]
+image = { version = "0.25.10", default-features = false, features = ["png", "ico"] }
+slint-build = "1.18.1"
+winresource = "0.1.31"

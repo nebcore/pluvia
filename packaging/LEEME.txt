@@ -1,0 +1,21 @@
+PLUVIA — sonidos ambientales de fondo desde la bandeja de Windows
+
+1. Descomprime la carpeta donde quieras dejarla (por ejemplo en Documentos)
+   y abre Pluvia.exe.
+2. La primera vez te pide elegir el volumen.
+3. Pluvia vive en la bandeja, junto al reloj. Si no ves el ícono, está
+   detrás de la flechita ^ ; puedes arrastrarlo a la barra para dejarlo fijo.
+   - Clic izquierdo: abre el panel.
+   - Clic derecho: play / pausa.
+4. En el panel, en SONIDOS, puedes prender varios a la vez y mezclarlos:
+   cada uno tiene su interruptor y su propio volumen. El volumen de arriba
+   es el general.
+5. Viene con lluvia. Para sumar otros sonidos (mp3, wav, ogg o flac),
+   descárgalos y usa "Agregar audio..." en el panel (se copian a la
+   carpeta assets). Clic derecho sobre un sonido > "Eliminar pista" lo
+   quita (el archivo va a la Papelera).
+
+No muevas Pluvia.exe fuera de esta carpeta: los sonidos y lo que la app
+recuerda viven al lado.
+
+NEB.
